@@ -186,7 +186,7 @@ p.polarization
 p.sd
 
 p.final <- (p.ridgeline | (p.ribbon / p.sd / p.polarization)) +
-  plot_annotation(title = "Congressional DW-NOMINATE Scores, First Dimension, 1899-2019")
+  plot_annotation(title = "US Congressional DW-NOMINATE Scores, Economic Dimension, 1899-2019")
 
 p.final
 
