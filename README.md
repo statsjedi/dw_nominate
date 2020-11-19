@@ -1,5 +1,5 @@
 # dw_nominate
-Analyze trends in congressional DW-NOMINATE scores 1899-2019
+Analyze trends in US Congressional DW-NOMINATE scores 1899-2019
 
 * HSall_members.xlsx: Raw data from https://voteview.com/data
 * README.md: This file
