@@ -19,9 +19,9 @@ dw_data <-
 p.ridgeline <- 
   dw_data %>% 
   mutate(breaks=cut(congress, breaks=2, include.lowest=TRUE)) %>% #split into 2 columns
-  ggplot(aes(x=nominate_dim1, y=as.factor(congress*2+1787), fill=stat(x)))+
-  geom_density_ridges_gradient(scale=3.5, rel_min_height = 0.01)+
-  scale_fill_distiller(palette = "RdBu")+ #red/blue divergine palette
+  ggplot(aes(x=nominate_dim1, y=as.factor(congress*2+1787), fill=as.factor(party_code)))+
+  geom_density_ridges(scale=3.5, rel_min_height = 0.03, alpha=0.75)+
+  scale_fill_manual(values=c("#67a9cf", "#ef8a62"))+
   xlab("DW-NOMINATE Score")+
   ylab("Year")+
   theme_classic()+
