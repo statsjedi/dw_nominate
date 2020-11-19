@@ -6,3 +6,5 @@ Analyze trends in congressional DW-NOMINATE scores 1899-2019
 * dw_nominate_final.R: R code for generating plots
 * final.png: final plots, large version
 * final_small.png: lower-resolution version of final.png
+* dw-nom_2d_final.R: generate an animated surface plot of first and second dimension DW-NOMINATE data
+* dw_animation.gif: animated surface plot of first and second dimension DW-NOMINATE data
