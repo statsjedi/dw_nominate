@@ -10,6 +10,7 @@ dw_data <-
   filter(complete.cases(nominate_dim1)==TRUE) %>%
   filter(congress>=56) %>% #focus congresses from 56 (1899) onwards
   select(congress, nominate_dim1, party_code, chamber) %>% 
+  filter(chamber != "President") %>% #limit to Congress
   filter(party_code==100 | party_code==200) #focus on Democrats (100) and Republicans (200)
 
 #================================================
